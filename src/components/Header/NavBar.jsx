@@ -1,9 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 export function NavBar () {
     return(
             <nav className="nav-container">
                 <ul className="nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="index.html">HOME</a>
+                        <NavLink to={'HOME'} className="nav-link">HOME</NavLink>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="html/modelos.html">ALL</a>
@@ -15,7 +17,7 @@ export function NavBar () {
                         <a className="nav-link" href="html/sEspera.html">BOTAS</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/contacto.html">CONTACTO</a>
+                        <NavLink to={'contacto'} className="nav-link">CONTACTO</NavLink>
                     </li>
                 </ul>
             </nav>
