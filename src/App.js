@@ -13,8 +13,9 @@ function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer />}/>
         <Route path='HOME' element={<ItemListContainer />}/>
-        <Route path='zapatos' element={<ItemListContainer />}/>
-        <Route path='botas' element={<ItemListContainer />}/>
+        <Route path='all' element={<ItemDetailConteiner />}/>
+        <Route path='zapatos' element={<ItemDetailConteiner />}/>
+        <Route path='botas' element={<ItemDetailConteiner />}/>
         <Route path='contacto' element={<div>Contacto</div>}/>
       </Routes>
     </ BrowserRouter>    

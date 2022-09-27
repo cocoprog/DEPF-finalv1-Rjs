@@ -8,13 +8,16 @@ export function NavBar () {
                         <NavLink to={'HOME'} className="nav-link">HOME</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/modelos.html">ALL</a>
+                        <NavLink to={'ALL'} className="nav-link">ALL</NavLink>
+                        {/* <a className="nav-link" href="html/modelos.html">ALL</a> */}
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/shop.html">ZAPATOS</a>
+                        <NavLink to={'ZAPATOS'} className="nav-link">ZAPATOS</NavLink>
+                        {/* <a className="nav-link" href="html/shop.html">ZAPATOS</a> */}
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/sEspera.html">BOTAS</a>
+                        <NavLink to={'BOTAS'} className="nav-link">BOTAS</NavLink>
+                        {/* <a className="nav-link" href="html/sEspera.html">BOTAS</a> */}
                     </li>
                     <li className="nav-item">
                         <NavLink to={'contacto'} className="nav-link">CONTACTO</NavLink>
