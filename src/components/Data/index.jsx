@@ -6,6 +6,7 @@ export const data = [
         price: 1500,
         image: 'https://media.revistagq.com/photos/5ca5f3413492a93f6cbf0f10/master/w_1600%2Cc_limit/el_zapato_oxford_763.jpg',
         category: 'zapato',
+        description: 'producto nuevo',
     },
     {
         id: 2, 
@@ -13,6 +14,7 @@ export const data = [
         price: 2500,
         image: 'https://media.revistagq.com/photos/5ca5f3413492a93f6cbf0f10/master/w_1600%2Cc_limit/el_zapato_oxford_763.jpg',
         category: 'zapato',
+        description: 'producto nuevo',
     }, 
     {
         id: 3, 
@@ -20,6 +22,7 @@ export const data = [
         price: 3500,
         image: 'https://http2.mlstatic.com/D_NQ_NP_840705-MLA50983434133_082022-W.jpg',
         category: 'bota',
+        description: 'producto nuevo',
     }, 
     {
         id: 4, 
@@ -27,5 +30,6 @@ export const data = [
         price: 4500,
         image: 'https://http2.mlstatic.com/D_NQ_NP_840705-MLA50983434133_082022-W.jpg',
         category: 'bota',
+        description: 'producto nuevo',
     }, 
 ]

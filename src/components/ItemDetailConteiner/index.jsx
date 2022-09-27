@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
 import {data} from '../Data/index';
 import ItemDetail from "../ItemDetail";
+import { useParams } from "react-router-dom";
 
 export function ItemDetailConteiner (){
+
+    const {id} = useParams();
 
     const [productList, setProductList] = useState([])
 
@@ -11,15 +14,21 @@ export function ItemDetailConteiner (){
             setProductList(response);
         })
         .catch(error => console.log(error));
-    },[]);
+    },[id]);
     
     const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve([data.find(zapato => zapato.id === 1)])
+          resolve([data.find((zapato) => zapato.id == id)])
         }, 2000)
       })
     
-    return <>
+    return (
+      <div>
+          {productList ? (
             <ItemDetail lista={productList}/>
-           </>
-}
+            ) : (
+              <h2>Cargando</h2>
+            )}
+           </div>
+           );
+};
