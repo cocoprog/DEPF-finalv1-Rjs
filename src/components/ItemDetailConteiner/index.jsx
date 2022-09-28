@@ -15,13 +15,13 @@ export function ItemDetailConteiner (){
         })
         .catch(error => console.log(error));
     },[id]);
-    
+
     const getProducts = new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve([data.find((zapato) => zapato.id == id)])
         }, 2000)
       })
-    
+
     return (
       <div>
           {productList ? (
